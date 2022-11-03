@@ -1,0 +1,58 @@
+*{
+    margin: 5px;
+    background: mintcream;
+}
+
+.slider-container{
+    max-width: 60vw;
+    margin: auto;
+    position: relative;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.image{
+    display: block;
+}
+
+.btn{
+    position: fixed;
+    font-size: 20px;
+    top: 50%;
+    width: auto;
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: -20px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+}
+
+.button{
+    background-color: cadetblue;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px;
+}
+
+.nxt{
+    right: 2%;
+}
+
+.prev{
+    left: 2%;
+}
+
+.prev:hover,
+.nxt:hover {
+    color: rgb(255, 253, 253);
+    background-color: rgba(0, 0, 0, 0.8);
+}
