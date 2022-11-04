@@ -1,0 +1,71 @@
+body{
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+    padding: 20px;
+    max-width: 60vw;
+    background-color: antiquewhite;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h2{
+    color: burlywood;
+    font-size: 4rem;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    margin: 0px;
+}
+
+p{
+    color: burlywood;
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.button-container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+.button-container>div{
+    padding: 10px 20px;
+    background-color: antiquewhite;
+    height: fit-content;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+    border: solid 1px burlywood;
+    letter-spacing: 1px;
+    color: burlywood;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in;
+}
+
+.reset-btn{
+    margin-left: 20px;
+    background-color: aqua;
+}
+
+.button-container>div:hover{
+    color: antiquewhite;
+    background-color: burlywood;
+
+}
