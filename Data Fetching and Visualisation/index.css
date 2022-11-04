@@ -1,0 +1,36 @@
+.container{
+    border: solid 0px #000;
+    border-left-width: 1px;
+    border-bottom-width: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 100px auto 0px;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    position: relative;
+}
+
+.col{
+    height: 20%;
+    background-color: aquamarine;
+    flex: 1;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    position: relative;
+}
+
+.x-label{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,150%);
+}
+
+.y-label{
+    position: absolute;
+    left: 0;
+    transform: translate(-150%, 0%);
+}
