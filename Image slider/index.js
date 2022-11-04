@@ -4,7 +4,7 @@ let images = document.querySelectorAll('img');
 let playButton = document.querySelector('button');
 let doc = document.documentElement;
 
-
+let interval;
 
 function setSlides(num) {
     counter += num;
@@ -29,9 +29,13 @@ displaySlides(1);
 
 function openFullScreen() {
     if (playButton.innerHTML === 'End slideshow') {
+        clearInterval(interval);
         closeFullscreen();
     }
     else {
+        interval = setInterval(() => {
+            setSlides(1);
+        }, 1500);
         if (doc.requestFullscreen) {
             doc.requestFullscreen();
         } else if (doc.webkitRequestFullscreen) { /* Safari */
@@ -45,6 +49,7 @@ function openFullScreen() {
 
 addEventListener('fullscreenchange', (event) => {
     if (playButton.innerHTML === 'End slideshow') {
+        clearInterval(interval);
         playButton.innerHTML = 'Start slideshow';
     } else {
         playButton.innerHTML = 'End slideshow';

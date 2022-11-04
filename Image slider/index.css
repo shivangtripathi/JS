@@ -12,6 +12,7 @@
 img{
     display: block;
     margin: auto;
+    height: 80vh;
     width: 100%;
 }
 
@@ -37,11 +38,25 @@ img{
 }
 
 .button{
-    background-color: cadetblue;
+    background-color: #fff;
     font-size: 14px;
+    letter-spacing: 1px;
     font-weight: bold;
-    padding: 4px 8px;
+    color: #000;
+    padding: 10px 20px;
+    align-self: center;
+    position: relative;
+    left: 45%;
+    border: solid 1px #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in;
 }
+
+.button:hover{
+    background-color: black;
+    color: #fff;
+}
+
 
 .nxt{
     right: 2%;
