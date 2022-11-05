@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Undoable Counter</title>
+</head>
+<body>
+    <h3>Undoable Counter</h3>
+    <div class="value-controller">
+    <button id="undo-btn" onclick="handleUndo()">Undo</button>
+    <button id="redo-btn" onclick="handleRedo()">Redo</button>
+    </div>
+    <div class="value-controller">
+    <button onclick="handleClick(-100)">-100</button>
+    <button onclick="handleClick(-10)">-10</button>
+    <button onclick="handleClick(-1)">-1</button>
+    <h5>0</h5>
+    <button onclick="handleClick(+1)">+1</button>
+    <button onclick="handleClick(+10)">+10</button>
+    <button onclick="handleClick(+100)">+100</button>
+    </div>
+    <h4>History</h4>
+    <div class="actions-container">
+        <ul class="list">
+        </ul>
+    </div>
+</body>
+    <script src="./index.js"></script>
+</html>
