@@ -47,6 +47,12 @@ async function _fetchDataFromApi() {
     let res = await fetch(API_URL_BASE + searchQuery);
     let list = await res.json();
     suggestionListParent.innerHTML = '';
+    if (list.length == 0 && searchQuery!='') {
+        let listItmNode = document.createElement('li');
+        listItmNode.className = "suggestions-list-item";
+        listItmNode.innerText = "No result Found";
+        suggestionListParent.appendChild(listItmNode);
+    }
     for (let i = 0; i < Math.min(list.length, 10); i++){  //stripping off the suggested list to show max 10 elements
         let listItmNode = document.createElement('li');
         listItmNode.className = "suggestions-list-item";
